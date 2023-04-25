@@ -58,34 +58,3 @@ To take it, you need to install the `Code Tour` extension for Visual Studio Code
 It will give access to a new menu on your IDE where you'll find the different tours about the simple-MVC. Click on play to start one : 
 
 ![menu](https://raw.githubusercontent.com/WildCodeSchool/simple-mvc/codetour/.tours/code_tour_menu.png)
-
-
-## Debug Objectif: afficher la page listant les items actuellement en base
-```
-composer.json : scr au lieu de src dans l'autoload
-Dossier Controller renommé en Controler
-AbstractController : abstract class > class abstract
-index.php : exit en haut du fichier;
-ItemController, méthode index() :
-    retour de la méthode typé en array
-    return retiré
-    namespace App\\Controller au lieu de App\Controller
-    $itemManager->selectAll() modif en $this->selectA11() (2 "un" au lieu des 2 "L")
-    appel de index.twig au lieu de index.html.twig
-    dans le passage de param à la vue, 'items'=>$items modif en '$items'=>$items
-ItemManager :
-    extend au lieu d'extends
-    point virgule manquant au bout de la constante TABLE
-AbstractManager:
-    ajout d'un 3eme antislash au __construct > ___construct
-Item/index.html.twig :
-    inversion items et item dans le for
-    item.title > item.tilte
-    h1 en dehors du bloc content
-    {{extends ... }} au lieu de {% extends ... %}
-    inversion des balises fermantes </a> et </li>
-style.css :
-    color:white sur le body
-    display:none sur le ul
-    opacity:0 sur le li
-```
